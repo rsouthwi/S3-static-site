@@ -1,0 +1,7 @@
+.center {
+  display: grid;
+  place-items: center;
+}
+.century {
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
