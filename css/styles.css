@@ -20,13 +20,17 @@
     position: relative;
     border-radius: 50%;
 }
-.circle img {
+.circle .lustine {
     width: 120px;
     height: 120px;
     margin-right: 50px;
     border-radius: 50%;
     object-fit: cover;
     object-position: -50px
+}
+.circle .c4 {
+    border-radius: 48%;
+    object-fit: cover;
 }
 .circle p {
     font-family: Darial, fantasy;
