@@ -9,6 +9,12 @@
     src: url(Darial-Bold.woff);
     font-weight: bold;
 }
+body {
+    background-color: #FFF;
+}
+header {
+    margin: 25px;
+}
 .center {
     display: grid;
     place-items: center;
