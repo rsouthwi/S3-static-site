@@ -12,7 +12,6 @@
     src: url("https://use.typekit.net/af/afc5c6/00000000000000003b9b1f23/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),
          url("https://use.typekit.net/af/afc5c6/00000000000000003b9b1f23/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),
          url("https://use.typekit.net/af/afc5c6/00000000000000003b9b1f23/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
-    font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
 }
 body {
     background-color: #FFF;
@@ -32,44 +31,26 @@ header {
     border-radius: 50%;
 }
 .circle .lustine {
+    border-radius: 50%;
+    object-fit: cover;
     width: 120px;
     height: 120px;
     margin-right: 50px;
-    border-radius: 50%;
-    object-fit: cover;
     object-position: -50px
 }
 .circle .c4 {
     border-radius: 48%;
     object-fit: cover;
 }
-.circle p {
-    font-family: Darial, fantasy;
-    font-size: 45px;
-    display: inline;
-    line-height: 0.72em;
-}
 .c4 {
     display: inline-block;
     margin: .5px;
 }
-.checker {
-    width: 25px;
-    height: 25px;
-}
-.red {
-    background-color: red;
-}
-.black {
-    background-color: black;
-}
-.empty {
-    width: 21px;
-    height: 21px;
-    border: solid black 2px
-}
 .todo {
+    position:relative;
     white-space: nowrap;
+    top: -25px;
+    left: 15px;
 }
 .circle ul {
     display: inline;
@@ -79,8 +60,8 @@ header {
     clip-path: circle(50% at 50% 50%);
 }
 .grid-container {
+    max-width: 750px;
     display: grid;
-    grid-template-columns: auto 470px auto;
 }
 .hidden {
     display: none;
@@ -90,12 +71,9 @@ header {
     opacity: .5;
 }
 .nav-item {
+    border: 5px #000 solid;
     width: 120px;
     height: 120px;
-    border: 5px #000 solid;
-}
-.row {
-
 }
 .title {
     width: 180px;
@@ -111,7 +89,6 @@ header {
 .a div {
     float: right;
     margin-right: -75px;
-    z-index: 10;
     }
 .b {
     grid-column: 1;
@@ -121,7 +98,6 @@ header {
     float: right;
     margin-right: -20px;
     margin-top: 25px;
-    z-index: 10;
     }
 .c {
     grid-column: 1;
@@ -130,7 +106,6 @@ header {
 .c div {
     float: right;
     margin-right: -150px;
-    z-index: 10;
     }
 .d {
     grid-column: 3;
@@ -140,7 +115,12 @@ header {
     float: left;
     margin-left: -100px;
     margin-top: 25px;
-    z-index: 10;
+    }
+.d p {
+    font-family: Darial, fantasy;
+    font-size: 45px;
+    display: inline;
+    line-height: 0.72em;
     }
 .e {
     grid-column: 3;
@@ -149,7 +129,6 @@ header {
 .e div {
     float: left;
     margin-left: -10px;
-    z-index: 10;
     }
 .f {
     grid-column: 3;
@@ -159,5 +138,38 @@ header {
     float: left;
     margin-left: -150px;
     margin-top: 25px;
-    z-index: 10;
+}
+@media only screen and (max-width: 700px) {
+    .circle .lustine {
+        width: 60px;
+        height: 60px;
+        margin-right: 25px;
+        object-position: -25px
+    }
+    .main img {
+        width: 250px;
+    }
+    .nav-item {
+        border-width: 3px;
+        width: 60px;
+        height: 60px;
+    }
+    .todo {
+    	font-size: 9px;
+    	top: -20px;
+    	left: 5px;
+    }
+    .b div {
+        margin-right: -40px;
+    }
+    .d div {
+        margin-left: -70px;
+    }
+    .d p {
+        font-size: 23px;
+        display: inline;
+    }
+    .e div {
+            margin-left: -20px;
+    }
 }
