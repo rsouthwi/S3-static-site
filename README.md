@@ -2,7 +2,7 @@
 This is for  [a domain that I own](http://www.ronsouthwick.com).  
 I'm using an AWS S3 bucket to serve this static website.
 
-![](images/regal_ant.gif)
+![](ronsouthwick/images/regal_ant.gif)
 
 ### Deployment
 This site is deployed via [Terraform](https://www.terraform.io/).  
