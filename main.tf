@@ -9,7 +9,7 @@ terraform {
 
 module "template_files" {
 	source = "hashicorp/dir/template"
-	base_dir = "${path.module}/ronsouthwick.com"
+	base_dir = "${path.module}/ronsouthwick"
 }
 
 provider "aws" {
