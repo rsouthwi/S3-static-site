@@ -90,6 +90,12 @@ header {
     float: right;
     margin-right: -75px;
     }
+.a p {
+    font-family: Darial, fantasy;
+    font-size: 45px;
+    display: inline;
+    line-height: 0.72em;
+    }
 .b {
     grid-column: 1;
     grid-row: 2;
@@ -115,12 +121,6 @@ header {
     float: left;
     margin-left: -100px;
     margin-top: 25px;
-    }
-.d p {
-    font-family: Darial, fantasy;
-    font-size: 45px;
-    display: inline;
-    line-height: 0.72em;
     }
 .e {
     grid-column: 3;
