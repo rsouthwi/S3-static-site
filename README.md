@@ -12,5 +12,5 @@ This site is deployed via [Terraform](https://www.terraform.io/).
 3. `terraform plan` – validates and creates a plan
 4. `terraform apply` – implements the plan
   (note: sometimes the first time this command is run, it results in the following message:
-  `Error putting S3 policy: AccessDenied: Access Denied`  so run `terraform apply` twice ¯\_(ツ)_/¯ )
+  `Error putting S3 policy: AccessDenied: Access Denied`  so run `terraform apply` twice ¯&#92;&#95;(ツ)&#95;/¯ )
 5. `terraform destroy` – throws it all away
